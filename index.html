@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 class="h1-primary">Generate a</h1>
+        <h1 class="h1-secondary">random password</h1>
+        <h3>Never use an insecure password again.</h3>
+        <div class="slidecontainer">
+            <input type="range" min="8" max="20" value="12" class="slider" id="myRange">
+            <h3 id="password-length">Password Length: 8</h3>
+          </div>
+        <button onclick="generatePassword()">Generate password</button>
+        <hr class="divider">
+        <div class="center">
+            <p id="password-el"></p>
+            <button type="button" class="copy-link-button" onclick="copyToClipboard()">
+                <span class="material-icons">content_copy</span>
+            </button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
